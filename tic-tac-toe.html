@@ -5,16 +5,21 @@
     <title>
         Tic-Tac-Toe Game
     </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" href="C:\Users\camim\OneDrive\Desktop\working_in_progress\Tic-Tac-Toe/Capture.jpg">
     <link rel="stylesheet" href="C:\Users\camim\OneDrive\Desktop\bootstrap-3.3.7-dist\css/bootstrap.css">
     <link rel="stylesheet" href="C:\Users\camim\OneDrive\Desktop\bootstrap-3.3.7-dist\js/bootstrap.min.js">
     <link rel="stylesheet" href="tic-tac-toe.css">
     <link href="css/bootstrap.css" rel="tic-tac-toe.css">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script rel="script" href="tic-tac-toe.js"></script>
 
+</head>
 <body>
-    <h1>Let the <span id="tic"><strong>TIC-TAC-TOE</strong></span> game begin!</h1>
     <div class="container">
+        <h1>Let the <span id="tic"><strong>TIC-TAC-TOE</strong></span> game begin!</h1>
         <h2>
             <span id="pick">Pick who you want to be:</span>
             <select class="pick">
@@ -29,31 +34,50 @@
         <table>
             <thead>
                 <tr>
-                    <th colspan="3">The X marks the spot first!</th>
+                    <th colspan="3" id="message"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
+                    <td class="click" id="1"></td>
+                    <td class="click" id="2"></td>
+                    <td class="click" id="3"></td>
                 </tr>
                 <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
+                    <td class="click" id="4"></td>
+                    <td class="click" id="5"></td>
+                    <td class="click" id="6"></td>
                 </tr>
                 <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
+                    <td class="click" id="7"></td>
+                    <td class="click" id="8"></td>
+                    <td class="click" id="9"></td>
                 </tr>
             </tbody>
         </table>
+        <div class="scoreBoard">
+            <h2 class="score"> Score Board</h2>
+            <p class="player">
+                <i class="fas fa-child"></i>
+                Player wins <span class="scoreAdd">0</span>
+
+
+            </p>
+            <p class="machine">
+                <i class="fas fa-robot"></i>
+                Machine wins <span class="scoreAdd">0</span>
+            </p>
+            <p class="draws">
+                <i class="fas fa-handshake"></i>
+                Draws <span class="scoreAdd">0</span>
+            </p>
+
+        </div>
 
     </div>
-    </div>
 
+    </div>
 </body>
+<script type="text/javascript" src="tic-tac-toe.js"></script>
 
 </html>
